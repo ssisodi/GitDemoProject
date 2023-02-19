@@ -1,3 +1,4 @@
+
 package barclayPomClasses;
 
 public class SharePriceCal {
@@ -8,3 +9,4 @@ public class SharePriceCal {
 	}
 
 }
+
