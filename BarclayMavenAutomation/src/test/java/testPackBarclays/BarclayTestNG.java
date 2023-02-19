@@ -54,7 +54,7 @@ public class BarclayTestNG {
 	  	*/
   }
   
-  @Test (enabled = false)
+  @Test 
   public void Test2() throws InterruptedException
   {
 	  Homepage homepage = new Homepage(driver); 
