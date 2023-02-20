@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\siddr\AppData\Local\Temp\testng-eclipse--1093990000\testng-customsuite.xml</span>
+                    <span>C:\Users\siddr\AppData\Local\Temp\testng-eclipse-1507282530\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testPackBarclays.BarclayTestNG" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testPackBarclays.BarclayTestNG" class="method navigator-link" hash-for-method="OtherBarclaySitesTest">OtherBarclaySitesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testPackBarclays.BarclayTestNG" class="method navigator-link" hash-for-method="PersonalBankingTest">PersonalBankingTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,9 +132,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="OtherBarclaySitesTest">
+                  </a> <!-- OtherBarclaySitesTest -->
+                  <span class="method-name">OtherBarclaySitesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PersonalBankingTest">
+                  </a> <!-- PersonalBankingTest -->
+                  <span class="method-name">PersonalBankingTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\siddr\AppData\Local\Temp\testng-eclipse--1093990000\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\siddr\AppData\Local\Temp\testng-eclipse-1507282530\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test1')
+data.setCell(0, 1, 'PersonalBankingTest')
 data.setCell(0, 2, 'testPackBarclays.BarclayTestNG')
-data.setCell(0, 3, 307);
+data.setCell(0, 3, 6725);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'OtherBarclaySitesTest')
+data.setCell(1, 2, 'testPackBarclays.BarclayTestNG')
+data.setCell(1, 3, 236);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 307 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,16 +226,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testPackBarclays.BarclayTestNG</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">Test2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -235,12 +244,32 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">c</span>
-                <span class="method-start">4427 ms</span>
+                <span class="method-start">4126 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">4429 ms</span>
+                <span class="method-name">OtherBarclaySitesTest</span>
+                <span class="method-start">4127 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">c</span>
+                <span class="method-start">4371 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PersonalBankingTest</span>
+                <span class="method-start">4372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">11099 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterclass</span>
+                <span class="method-start">11100 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

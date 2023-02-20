@@ -5,9 +5,11 @@
     <classes>
       <class name="testPackBarclays.BarclayTestNG">
         <methods>
-          <include name="Test1"/>
           <include name="a"/>
+          <include name="PersonalBankingTest"/>
           <include name="c"/>
+          <include name="afterclass"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- testPackBarclays.BarclayTestNG -->
     </classes>

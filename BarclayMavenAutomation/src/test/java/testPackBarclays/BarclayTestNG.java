@@ -3,9 +3,12 @@ package testPackBarclays;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import barclayPomClasses.Homepage;
 
@@ -26,12 +29,13 @@ public class BarclayTestNG {
 	public void c()
 	{
 		System.out.println("Before Method");
+		
 	}	
 	
   @Test
-  public void Test1() throws InterruptedException{
+  public void OtherBarclaySitesTest() throws InterruptedException{
 	  
-	  Homepage homepage = new Homepage(driver); 
+	  Homepage homepage = new Homepage(driver);
 	  String expectedtext = "Other Barclays sites"; 
 	  String actualres = homepage.verifytextOtherSites();
 	  boolean resultothers = homepage.checkOtherSites();
@@ -54,11 +58,37 @@ public class BarclayTestNG {
 	  	*/
   }
   
-  @Test (enabled = false)
-  public void Test2() throws InterruptedException
+  @Test 
+  public void PersonalBankingTest() throws InterruptedException
   {
-	  Homepage homepage = new Homepage(driver); 
+	  Homepage homepage = new Homepage(driver);
+	  /*
+	  SoftAssert soft = new SoftAssert(); 
+	  String acttext = homepage.verifyPersonalBankingTab();
+	  String exptext = "Personal Banking  "; 
+	  soft.assertEquals(acttext, exptext, "Personal banking text is not matched");
+	  System.out.println("Personal banking text is matched");
+	  soft.assertAll();
+	  */
+	  boolean verifybutton = homepage.checkPersonalBankingTab(); 
+	  Assert.assertTrue(verifybutton, "Personal banking tab is disabled");
+	  System.out.println("Personal banking tab is enabled");  
+	  
 	  homepage.clickOnPersonalBanking(driver);
   } 
+  
+  @AfterMethod
+	public void afterMethod()
+	{
+		System.out.println("After Method");
+	}
+	
+	@AfterClass
+	public void afterclass()
+	{
+		System.out.println("After Class");
+	}
+
+  
   
 }
