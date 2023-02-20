@@ -65,21 +65,23 @@ public class Homepage {
 		act.moveToElement(OtherSites).perform();
 	}
 	
+	public String verifyPersonalBankingTab()
+	{
+		String acttext = PersonalBanking.getText(); 
+		return acttext;
+	}
+	
+	public boolean checkPersonalBankingTab()
+	{
+		boolean result = PersonalBanking.isEnabled();
+		return result;
+	}
+	
 	
 	public void clickOnPersonalBanking(WebDriver driver) throws InterruptedException
 	{
-		try {
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		act.moveToElement(PersonalBanking).perform(); 
-		boolean result = PersonalBanking.isEnabled();
-		if(result == true)
-		{
-			System.out.println("Personal banking tab is enabled");
-		}
-		else 
-		{
-			System.out.println("Personal banking tab is disabled");
-		}
 		Thread.sleep(1000);
 		act.click().perform();	// Personal banking webpage is clicked
 		Thread.sleep(1000);
@@ -87,11 +89,7 @@ public class Homepage {
 		Thread.sleep(1000);
 		act.moveToElement(OtherSites).perform();
 	}
-		catch(Exception e)
-		{
-			System.out.println(e);
-		}
-	}
+		
 	
 }
 
