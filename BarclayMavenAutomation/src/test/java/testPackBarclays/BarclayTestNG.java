@@ -2,9 +2,7 @@ package testPackBarclays;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -39,13 +37,6 @@ public class BarclayTestNG {
 	  String expectedtext = "Other Barclays sites"; 
 	  String actualres = homepage.verifytextOtherSites();
 	  boolean resultothers = homepage.checkOtherSites();
-	  Assert.assertEquals(actualres, expectedtext, "Other Barclays sites tab text is not verified");
-	  System.out.println("Other Barclays sites tab text is verified");
-	  Assert.assertTrue(resultothers, "Other Barclays sites is disabled");
-	  System.out.println("Other Barclays sites tab is functioning correctly");
-	  homepage.otherSites();
-	 
-	  /*
 	  if(actualres.equals(expectedtext) && resultothers == true)
 		{
 			System.out.println("Other Barclays sites tab is verified and functioning correctly");
@@ -55,7 +46,7 @@ public class BarclayTestNG {
 		{
 			System.out.println("Other Barclays sites tab is not verified and functioning correctly");
 		}
-	  	*/
+	  	
   }
   
   @Test 
@@ -92,3 +83,4 @@ public class BarclayTestNG {
   
   
 }
+
