@@ -22,13 +22,13 @@ public class Homepage {
 	@FindBy(xpath = "//a[contains(text(),'Business Banking')]")
 	private WebElement BusinessBanking; 
 	
-	@FindBy(xpath = "( //a[contains(text(),'Corporate Banking')])[1]")
+	@FindBy(xpath = "//a[contains(text(),'Corporate Banking')])[1]")
 	private WebElement CorporateBanking; 
 	
-	@FindBy(xpath ="//a[text() = 'Investors']")
-	private WebElement InvestTab; 
+	@FindBy(xpath = "//a[contains(text(),'Investment Bank')])[1]")
+	private WebElement InvestW; 
 	
-	@FindBy(xpath = "//a[text() = 'Investors']")
+	@FindBy(xpath ="//a[text() = 'Investors']")
 	private WebElement TabInvest; 
 	
 	@FindBy(xpath = "//a[contains(text(),'Share price ')]")
@@ -46,7 +46,7 @@ public class Homepage {
 	}
 	
 	//Methods for WebElement actions
-	
+//----------------------------------------------------------------------------------------------	
 	public String verifytextOtherSites()
 	{	
 		String actualtext = OtherSites.getText(); 
@@ -63,19 +63,12 @@ public class Homepage {
 	{
 		act.moveToElement(OtherSites).perform();
 	}
-	
-	public String verifyPersonalBankingTab()
-	{
-		String acttext = PersonalBanking.getText(); 
-		return acttext;
-	}
-	
+//--------------------------------Personal banking tab ---------------------------------	
 	public boolean checkPersonalBankingTab()
 	{
 		boolean result = PersonalBanking.isEnabled();
 		return result;
 	}
-	
 	
 	public void clickOnPersonalBanking(WebDriver driver) throws InterruptedException
 	{
@@ -88,7 +81,60 @@ public class Homepage {
 		Thread.sleep(1000);
 		act.moveToElement(OtherSites).perform();
 	}
-		
+//-----------------------------Business banking tab--------------------------------------
+	public boolean checkBusinessBankingTab()
+	{
+		boolean result = BusinessBanking.isEnabled(); 
+		return result; 
+	}
+	
+	public void clickBusinessBanking(WebDriver driver) throws InterruptedException
+	{
+		Thread.sleep(3000);
+		act.moveToElement(BusinessBanking).perform();
+		Thread.sleep(1000);
+		act.click().perform();
+		Thread.sleep(1000);
+		driver.switchTo().window(mainpage);
+		Thread.sleep(1000); 
+		act.moveToElement(OtherSites).perform();
+	}
+//-------------------------------Corporate Banking tab------------------------------
+	public boolean checkCorporateBankingTab()
+	{
+		boolean result = CorporateBanking.isEnabled(); 
+		return result; 
+	}
+	
+	public void clickCorporateBanking(WebDriver driver) throws InterruptedException
+	{
+		Thread.sleep(3000);
+		act.moveToElement(CorporateBanking).perform();
+		Thread.sleep(1000);
+		act.click().perform();
+		Thread.sleep(1000);
+		driver.switchTo().window(mainpage);
+		Thread.sleep(1000); 
+		act.moveToElement(OtherSites).perform();
+	}
+//-------------------------------Investment Banking tab------------------------------
+	public boolean checkInvestmentTab()
+	{
+		boolean result = InvestW.isEnabled(); 
+		return result; 
+	}
+	
+	public void clickInvestmentBanking(WebDriver driver) throws InterruptedException
+	{
+		Thread.sleep(3000);
+		act.moveToElement(InvestW).perform();
+		Thread.sleep(1000);
+		act.click().perform();
+		Thread.sleep(1000);
+		driver.switchTo().window(mainpage);
+		Thread.sleep(1000); 
+		act.moveToElement(OtherSites).perform();
+	}	
 	
 }
 

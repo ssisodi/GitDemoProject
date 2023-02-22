@@ -16,7 +16,7 @@ public class BarclayTestNG {
 	WebDriver driver;
 	
 	@BeforeClass
-	public void a()
+	public void beforeClass()
 	{
 		System.setProperty("webdriver.chrome.driver","G:\\My Drive\\HP Pavillion Backup\\Documents\\Notes-VCT\\chromedriver_win32_110\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -26,14 +26,14 @@ public class BarclayTestNG {
 	}
 	
 	@BeforeMethod
-	public void c()
+	public void beforeMethod()
 	{
 		System.out.println("Before Method");
 		
 	}	
 	
-  @Test
-  public void OtherBarclaySitesTest() throws InterruptedException{
+  @Test 
+  public void Test1() throws InterruptedException{
 	  
 	  Homepage homepage = new Homepage(driver);
 	  String expectedtext = "Other Barclays sites"; 
@@ -59,8 +59,10 @@ public class BarclayTestNG {
   }
   
   @Test 
-  public void PersonalBankingTest() throws InterruptedException
+  public void Test2() throws InterruptedException
   {
+	  try {
+		  
 	  Homepage homepage = new Homepage(driver);
 	  /*
 	  SoftAssert soft = new SoftAssert(); 
@@ -73,9 +75,66 @@ public class BarclayTestNG {
 	  boolean verifybutton = homepage.checkPersonalBankingTab(); 
 	  Assert.assertTrue(verifybutton, "Personal banking tab is disabled");
 	  System.out.println("Personal banking tab is enabled");  
-	  
+	  Thread.sleep(3000);
 	  homepage.clickOnPersonalBanking(driver);
+	  }
+	  catch(Exception e)
+	  {
+		  System.out.println(e);
+	  }
   } 
+  
+  @Test 
+  public void Test3() throws InterruptedException 
+  {
+	  try {
+	  Homepage homepage = new Homepage(driver);
+	  boolean result  = homepage.checkBusinessBankingTab();
+	  Assert.assertTrue(result, "Business banking tab is disabled");
+	  System.out.println("Business banking tab is enabled");
+	  Thread.sleep(3000);
+	  homepage.clickBusinessBanking(driver);  
+	  }
+	  catch (Exception e)
+	  {
+		  System.out.println(e);
+	  }
+  }
+  
+  @Test 
+  public void Test4() throws InterruptedException
+  {
+	  try {
+	  Homepage homepage = new Homepage(driver);
+	  boolean result = homepage.checkCorporateBankingTab(); 
+	  Assert.assertTrue(result, "Corporate banking tab is disabled");
+	  System.out.println("Corporate banking tab is enabled");
+	  Thread.sleep(3000);
+	  homepage.clickCorporateBanking(driver);
+	  }
+	  catch(Exception e)
+	  {
+		  System.out.println(e);
+	  }
+  }
+  
+  @Test 
+  public void Test5() throws InterruptedException
+  {
+	  try {
+	  Homepage homepage = new Homepage(driver);
+	  boolean result = homepage.checkInvestmentTab(); 
+	  Assert.assertTrue(result, "Investment banking tab is disabled");
+	  System.out.println("Investment banking is enabled");
+	  Thread.sleep(3000);
+	  homepage.clickInvestmentBanking(driver);
+	  }
+	  catch(Exception e)
+	  {
+		  System.out.println(e);
+	  }
+  }
+  
   
   @AfterMethod
 	public void afterMethod()
@@ -84,7 +143,7 @@ public class BarclayTestNG {
 	}
 	
 	@AfterClass
-	public void afterclass()
+	public void afterClass()
 	{
 		System.out.println("After Class");
 	}
