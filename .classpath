@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="BarclayMavenAutomation/src/main/java"/>
+	<classpathentry kind="src" path="BarclayMavenAutomation/src/test/java"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/BarclaysAutomationMaven/src/main/java"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/BarclaysAutomationMaven/src/test/java"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/MagentoAutomationMaven1/src/test/java"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/Nibiru/src"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/Selenium_08oct_Morning_Batch/src"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/UpWorkAutomationMaven/src/main/java"/>
+	<classpathentry kind="src" path="MyEclipseProject15-03-1991/UpWorkAutomationMaven/src/test/java"/>
+	<classpathentry kind="src" path="Nibiru/src"/>
+	<classpathentry kind="src" path="OpenCartMaven/src/test/java"/>
+	<classpathentry kind="src" path="Selenium_08oct_Morning_Batch/src"/>
+	<classpathentry kind="output" path="MyEclipseProject15-03-1991/MagentoAutomationMaven1/target/test-classes"/>
+</classpath>
