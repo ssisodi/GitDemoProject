@@ -3,7 +3,8 @@ package testCases;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.JavascriptExecutor;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -15,9 +16,13 @@ public class BaseClass {
 
 	public WebDriver driver;
 	
+	public Logger logger; // for logging
+	
 	@BeforeClass
 	public void setup() 
 	{
+		logger = LogManager.getLogger(this.getClass()); //logging		
+		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
@@ -29,7 +34,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 	
 	
