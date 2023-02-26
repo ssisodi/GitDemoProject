@@ -1,5 +1,5 @@
 package testNgPack;
-//Main TestNG Class // "G:\\My Drive\\HP Pavilion Backup\\Documents\\Notes-VCT\\chromedriver_win32\\chromedriver.exe");
+//Main TestNG Class 
 	import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.NoSuchElementException;
