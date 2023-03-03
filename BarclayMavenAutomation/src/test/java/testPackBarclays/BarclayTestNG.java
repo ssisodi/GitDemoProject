@@ -22,6 +22,7 @@ public class BarclayTestNG {
 		driver = new ChromeDriver();
 		driver.get("https://home.barclays/");
 		driver.manage().window().maximize(); 
+		driver.manage().deleteAllCookies();
 		System.out.println("Before class");	
 	}
 	
