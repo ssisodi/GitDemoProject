@@ -12,6 +12,7 @@ public class Browser {
 	{
 		System.setProperty("webdriver.chrome.driver","G:\\My Drive\\HP Pavillion Backup\\Documents\\Notes-VCT\\chromedriver_win32_110\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		
 		return driver; 
 	}
 	
