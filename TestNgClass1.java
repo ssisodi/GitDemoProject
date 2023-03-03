@@ -4,7 +4,7 @@ package testNgPack;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -80,8 +80,8 @@ public class TestNgClass1 extends Browser{
 		System.out.println("Before Method ran before each test");
 	}
 	
-@Test 
-public void Test1() throws InterruptedException {
+	@Test 
+	public void Test1() throws InterruptedException {
 	
 	  try {
 		  System.out.println("-------------------------------------------------");
@@ -119,7 +119,7 @@ public void Test1() throws InterruptedException {
 	  String result2 = homepage.testHybridTab(); 
 	  String result3 = homepage.testPerformanceTab(); 
 	  String result4 = homepage.futureTab(); 
-	  // Hard assertion is replaced for 'if-else statement'
+	 // Hard assertion is replaced for 'if-else statement'
 	  Assert.assertNotEquals(result1, exptext1, "The text is same so it failed");
 	  Assert.assertEquals(result2,exptext2, "Hybrid & Electric is not clicked and it failed");
 	  Assert.assertNotEquals(result3, exptext3, "Performance is not clicked and it failed");
