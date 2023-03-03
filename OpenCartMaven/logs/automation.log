@@ -1,0 +1,82 @@
+20:51:42.271 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+20:51:42.345 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My account link
+20:51:42.881 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on register link
+20:51:42.896 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+20:51:52.026 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on continue
+20:51:57.065 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+20:56:28.708 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+20:56:28.917 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My account link
+20:56:29.264 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on register link
+20:56:29.270 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+20:56:38.264 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on continue
+20:56:43.317 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+20:56:43.318 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** Finished TC_001_AccountRegistrationTest ****
+21:17:25.628 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+21:17:25.630 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+21:17:25.894 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My account link
+21:17:26.329 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on register link
+21:17:26.334 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+21:17:35.623 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on continue
+21:17:40.692 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+21:17:40.692 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** Finished TC_001_AccountRegistrationTest ****
+07:03:56.758 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+07:03:56.761 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+07:03:56.964 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My account link
+07:03:57.629 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on register link
+07:03:57.633 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+07:04:06.940 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on continue
+07:04:11.974 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+07:04:11.974 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** Finished TC_001_AccountRegistrationTest ****
+07:11:40.485 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs....
+07:11:40.487 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+07:11:40.688 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My account link
+07:11:41.081 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on register link
+07:11:41.085 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+07:11:50.185 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on continue
+07:11:55.230 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+07:11:55.233 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** Finished TC_001_AccountRegistrationTest ****
+07:30:47.253 [main] TRACE  - Configuration file defined to be ::null
+07:30:49.179 [main] DEBUG  - application logs....
+07:30:49.180 [main] INFO   - *** Starting TC_001_AccountRegistrationTest ***
+07:30:49.370 [main] INFO   - Clicked on My account link
+07:30:49.803 [main] INFO   - Clicked on register link
+07:30:49.808 [main] INFO   - Providing customer data
+07:30:58.895 [main] INFO   - Clicked on continue
+07:31:03.928 [main] INFO   - Validating expected message
+07:31:03.936 [main] INFO   - **** Finished TC_001_AccountRegistrationTest ****
+08:06:07.474 [main] TRACE  - Configuration file defined to be ::null
+08:06:09.849 [main] DEBUG  - application logs....
+08:06:09.849 [main] INFO   - *** Starting TC_001_AccountRegistrationTest ***
+08:06:10.042 [main] INFO   - Clicked on My account link
+08:06:10.443 [main] INFO   - Clicked on register link
+08:06:10.447 [main] INFO   - Providing customer data
+08:06:19.519 [main] INFO   - Clicked on continue
+08:06:24.560 [main] INFO   - Validating expected message
+08:06:24.563 [main] INFO   - **** Finished TC_001_AccountRegistrationTest ****
+2023-03-02 08:24:02 [main] INFO  :16 - *** Starting TC_001_AccountRegistrationTest ***
+2023-03-02 08:24:03 [main] INFO  :20 - Clicked on My account link
+2023-03-02 08:24:03 [main] INFO  :23 - Clicked on register link
+2023-03-02 08:24:03 [main] INFO  :27 - Providing customer data
+2023-03-02 08:24:12 [main] INFO  :43 - Clicked on continue
+2023-03-02 08:24:17 [main] INFO  :48 - Validating expected message
+2023-03-02 08:24:17 [main] INFO  :52 - **** Finished TC_001_AccountRegistrationTest ****
+2023-03-02 08:25:43 [main] DEBUG :15 - application logs....
+2023-03-02 08:25:43 [main] INFO  :16 - *** Starting TC_001_AccountRegistrationTest ***
+2023-03-02 08:25:43 [main] INFO  :20 - Clicked on My account link
+2023-03-02 08:25:43 [main] INFO  :23 - Clicked on register link
+2023-03-02 08:25:43 [main] INFO  :27 - Providing customer data
+2023-03-02 08:25:52 [main] INFO  :43 - Clicked on continue
+2023-03-02 08:25:58 [main] INFO  :48 - Validating expected message
+2023-03-02 08:25:58 [main] INFO  :52 - **** Finished TC_001_AccountRegistrationTest ****
+2023-03-02 08:35:46 [main] DEBUG TC_001_AccountRegistrationTest:15 - application logs....
+2023-03-02 08:35:46 [main] INFO  TC_001_AccountRegistrationTest:16 - *** Starting TC_001_AccountRegistrationTest ***
+2023-03-02 08:35:46 [main] INFO  TC_001_AccountRegistrationTest:20 - Clicked on My account link
+2023-03-02 08:35:46 [main] INFO  TC_001_AccountRegistrationTest:23 - Clicked on register link
+2023-03-02 08:35:46 [main] INFO  TC_001_AccountRegistrationTest:27 - Providing customer data
+2023-03-02 08:35:56 [main] INFO  TC_001_AccountRegistrationTest:43 - Clicked on continue
+2023-03-02 08:36:01 [main] INFO  TC_001_AccountRegistrationTest:48 - Validating expected message
+2023-03-02 08:36:01 [main] INFO  TC_001_AccountRegistrationTest:52 - **** Finished TC_001_AccountRegistrationTest ****
+2023-03-02 12:03:43 [main] DEBUG TC_001_AccountRegistrationTest:15 - application logs....
+2023-03-02 12:03:43 [main] INFO  TC_001_AccountRegistrationTest:16 - *** Starting TC_001_AccountRegistrationTest ***
+2023-03-02 12:05:41 [main] INFO  TC_001_AccountRegistrationTest:16 - *** Starting TC_001_AccountRegistrationTest ***
+2023-03-02 12:06:52 [main] INFO  TC_001_AccountRegistrationTest:16 - *** Starting TC_001_AccountRegistrationTest ***

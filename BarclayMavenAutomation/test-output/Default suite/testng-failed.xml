@@ -6,7 +6,11 @@
       <class name="testPackBarclays.BarclayTestNG">
         <methods>
           <include name="beforeClass"/>
+          <include name="Test1"/>
           <include name="beforeMethod"/>
+          <include name="Test5"/>
+          <include name="Test4"/>
+          <include name="Test3"/>
           <include name="afterClass"/>
           <include name="Test2"/>
           <include name="afterMethod"/>
